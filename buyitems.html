@@ -1,51 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Index</title>
+<title>Buy</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<script src="js/jquery.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-	
-  </script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-				});
-			});
-		</script>
-<script type="text/javascript">
-		$(document).ready(function() {
-				/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-				*/
-		$().UItoTop({ easingType: 'easeOutQuart' });
-});
-</script>
-</head>
-<body>
-<!-- banner -->
 <div class="header">
   <div class="container">
     <div class="col-md-3 header-left">
@@ -55,10 +15,9 @@
       <div class="head-nav"> <span class="menu"><img src="images/menu.png" alt=""></span>
         <div class="clearfix"> </div>
         <ul class="cl-effect-16">
-         <li class="active"><a href="index.html" data-hover="HOME">HOME</a></li>
+<li class="active"><a href="index.html" data-hover="HOME">HOME</a></li>
 						<li><a href="profile.html" data-hover="PROFILE">PROFILE</a></li>
-						<li><a href="blog.html" data-hover="BLOG">BLOG</a></li>
-				
+						<li><a href="#" data-hover="BLOG">BLOG</a></li>
 						<br>
         </ul>
         <!-- script-for-nav -->
@@ -104,7 +63,7 @@
 </section>
    <section id="user" style="margin-top: 10px">
 				<h3 class="title">Popular users</h3>
-					<ol>
+								<ol>
 					<li class="clearfix">
 						
 							<p class="img col-md-3"><a class="over"><img src="images/10.jpg" width="36" height="36"></a></p>
@@ -133,7 +92,7 @@
         <li><a href="login.html">Log Out</a></li>
       </div>
       <div class="clearfix">
-        <div class = "h1">Recommendation</div>
+ <!--       <div class = "h1">Recommendation</div> -->
       </div>
       <div class = "clearfix">
         <div class="banner">
@@ -141,9 +100,28 @@
             <div class="slider">
               <div class="callbacks_container">
                 <ul class="rslides" id="slider">
-                  <li> <img src="images/5.jpg" class="img-responsive" alt="" /> </li>
-                  <li> <img src="images/3.jpg" class="img-responsive" alt="" /> </li>
-                  <li> <img src="images/4.jpg" class="img-responsive" alt="" /> </li>
+               <img src="image2.jpg" class="img-responsive" alt="" style="width:456px;height:608px;"/> 
+                <div class="items">
+                <h2 id="Product">Product Information</h2>
+                  <h3>Scarf</h3> 
+                  <h4> ZARA Navy Blue Scarf</h4> 
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                  <h3>Product Detail</h3>
+                  <p>Set off on a new adventure in ZARA's elegant Jet </p> 
+                  <p> Set Scarf, finished in a signature jacquard pattern </p>
+                   <p> with soft eyelash fringe. </p>
+                  <P>Wrap measures approximately 48 inches by 80 </p>
+                  <p>inches Eyelash</p>
+                  <p>fringe measures approximately 1 inch </p>
+                  <p>Acrylic Hand wash </p>
+                  <p>Imported Web ID: 2919048 </p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                  <h1> 75.5 USD </h1>
+                  <form>
+ 					   <button class="buy" type="submit" value="Purchase!">Purchase!</button>
+					</form>
+   
+                </div>
                 </ul>
               </div>
             </div>
@@ -158,83 +136,69 @@
 <!-- pages -->
 <div class="pages">
   <div class="container" style="margin-bottom: 100px">
-    <div style="left: 33%; position: relative; top: 0px; height: 10x; min-height: 16px;" class="h1">
-     <a><span class="label label-primary"> Recommendation</span></a>
-      <a href="mycloset.html"><span class="label label-default"> My Closet</span></a>
-       
-    </div>
-        
+  <div id="function_btn" style="left: 27%; position: relative; top: 0px; height: 10x; min-height: 16px;" class="h1">   
+<!-- <div class="btn_save fn_btn" data-saveType="coordinate" data-itemImageId="" data-saveId="9251461" data-elementId="" data-screenId="" data-objectId=""> -->
+  <div>
+  	<div id="opDisplay">200</div> 
+  	<div id="opDisplay2">2000</div>
+  		<div class="ghj">
+			<h3 class="clearfix">
+				<a><span class="label label-success" onclick='document.getElementById("opDisplay").innerHTML = "201"' id = "addBtn">Add</span></a>
+				<a><span class="label label-danger" onclick='document.getElementById("opDisplay2").innerHTML = "2001"' id = "loveBtn">Love</span></a>
+			</h3>
+		</div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container">
+<!--  <div class="discription">
+	<h3 id="discription_text">Photo discription&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+	<p>This is my daily casual look! This collocation is not only suitable for dating night but also for attending a party.</p>
+	</div>-->
+	 <div class="UserComment">
+	<h3 id="otherUser_text">Users' Comment&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+	<p>1.Awesome! Really love this!!!</p>
+	<p>2.I will definitely buy these items!</p>
+	</div>
+	<h3 class="text-left" id ="Comment_text">Comment &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+	<form method="post">
+	<div id="comment">
+		<input type="text" class="text" value="Write Comment" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Write Comment';}">
+		<button id="submit">Submit</button>
+	</div>
+	<div class="text"> </div>
+	<div class="clearfix"></div>
+	</form>
+	</div>
     <div class="container">
-		<h3>Updated 9:30PM</h3>
+    <!--		<h3>Updated 9:30PM</h3> -->
 	  <div class="col-md-3 fashio-left">
-				<img src="images/25.jpg" alt=" " class="img-responsive">
+<!--				<img src="images/25.jpg" alt=" " class="img-responsive"> -->
 		<h4> </h4>
 			  <div class="clearfix">
-							  <div class="ghj">
-									<p class="img col-md-6"><a href="./blog.html" ><img src="images/1.jpg" alt="Andy's Profile" width="64" height="64"></a>
-									<h4><a href="./blog.html" >Id : Jane</a></h4>
-									<h3 class="clearfix">
-									<a href="#"><span class="label label-success">Follow</span>
-								</a>
-								</h3>
-									</p>
-								  
-									
-				
-							</div>
+					<div class="ghj">
+					</div>
 						<!-- /.profile --></div>
 			</div>  
 			<div class="col-md-3 fashio-left">
-				<img src="images/26.jpg" alt=" " class="img-responsive">
 				<h4> </h4>
 			  <div class="clearfix">
 							  <div class="ghj">
-									<p class="img col-md-6"><a href="./blog.html" ><img src="images/5.jpg" alt="Andy's Profile" width="64" height="64"></a>
-									<h4><a href="./blog.html" >Id : Jenny</a></h4>
-									<h3 class="clearfix">
-									<a href="#"><span class="label label-success">Follow</span>
-								</a>
-								</h3>
-									</p>
-								  
-									
-				
 							</div>
 						<!-- /.profile --></div>
 			</div>
 			<div class="col-md-3 fashio-left">
-				<img src="images/25.jpg" alt=" " class="img-responsive">
 				<h4> </h4>
 			  <div class="clearfix">
-							  <div class="ghj">
-									<p class="img col-md-6"><a href="./blog.html" ><img src="images/1.jpg" alt="Andy's Profile" width="64" height="64"></a>
-									<h4><a href="./blog.html" >Id : Jane</a></h4>
-									<h3 class="clearfix">
-									<a href="#"><span class="label label-success">Follow</span>
-								</a>
-								</h3>
-									</p>
-								  
-									
-				
+							<div class="ghj">
 							</div>
 						<!-- /.profile --></div>
 			</div>  
 	  <div class="col-md-3 fashio-left">
-				<img src="images/26.jpg" alt=" " class="img-responsive">
 				<h4> </h4>
 			  <div class="clearfix">
-							  <div class="ghj">
-									<p class="img col-md-6"><a href="./blog.html" ><img src="images/5.jpg" alt="Andy's Profile" width="64" height="64"></a>
-									<h4><a href="./blog.html" >Id : Jenny</a></h4>
-									<h3 class="clearfix">
-									<a href="#"><span class="label label-success">Follow</span>
-								</a>
-								</h3>
-									</p>
-								  
-									
-				
+							  <div class="ghj">	
 							</div>
 						<!-- /.profile --></div>
 			</div>

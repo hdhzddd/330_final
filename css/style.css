@@ -1555,3 +1555,97 @@ h3.ghj {
 #toTop:hover{
 	outline: none;
 }
+#opDisplay{
+    position:absolute;
+    font-size: 24px;
+    left: 80px;
+    top: -25px;
+      }
+#opDisplay2{
+    position:absolute;
+    font-size: 24px;
+    left: 300px;
+    top: -25px;
+      }
+#loveBtn{
+        background-color: #EF536B;
+        position:absolute;
+        font-size: 24px;
+        left: 200px;
+        top: -30px;
+      }
+#addBtn{
+        background-color: #EF536B;
+        position:absolute;
+        font-size: 24px;
+        left: -15px;
+        top: -30px;
+      }
+#comment input[type="text"]{
+    width: 75%;
+  margin:20px 290px;
+
+}
+#Comment_text{
+  margin:0px 290px 0px;
+  font-size: 24;
+  background: black;
+  width:150px;
+  height: 50px;
+  color: white; 
+  padding: 10px;
+}
+#submit{
+  margin:0px 1050px;
+  font-size: 24;
+}
+.discription{
+  width: 75%;
+  margin:-75px 280px 20px 280px;
+  font-size: 24; 
+  padding: 10px;
+
+}
+#discription_text{
+  margin:0px 280px 20px 0px;
+  font-size: 24;
+  background: black;
+  width:280px;
+  height: 50px;
+  color: white; 
+  padding: 10px;
+
+}
+.UserComment{
+    width: 75%;
+  margin:0px 280px 20px 280px;
+  font-size: 24; 
+  padding: 10px;
+}
+#otherUser_text{
+    margin:0px 280px 20px 0px;
+  font-size: 24;
+  background: black;
+  width:280px;
+  height: 50px;
+  color: white; 
+  padding: 10px;
+}
+.items{
+  font-size: 28;
+  color: black;
+  background: pink;
+  width: 500px;
+  height: 608px;
+  margin:0px 0px 0px 500px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+.buy{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 24;
+  margin:0px 0px 10px 0px;
+
+}
