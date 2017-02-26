@@ -1,6 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<script>
+function myFunction()
+{
+var x;
+var r=confirm("Add to my closet?");
+if (r==true)
+  {
+  x="Add to Mycloset";
+  }
+else
+  {
+  x = "Cancel";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
 <title>Buy</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -10,12 +27,12 @@
   <div class="container">
     <div class="col-md-3 header-left">
       <div class="logo">
-        <h1><a href="index.html">LOGO</a></h1>
+        <h1><a href="indexL.html">LOGO</a></h1>
       </div>
       <div class="head-nav"> <span class="menu"><img src="images/menu.png" alt=""></span>
         <div class="clearfix"> </div>
         <ul class="cl-effect-16">
-<li class="active"><a href="index.html" data-hover="HOME">HOME</a></li>
+<li class="active"><a href="indexL.html" data-hover="HOME">HOME</a></li>
 						<li><a href="profile.html" data-hover="PROFILE">PROFILE</a></li>
 						<li><a href="#" data-hover="BLOG">BLOG</a></li>
 						<br>
@@ -139,12 +156,12 @@
   <div id="function_btn" style="left: 27%; position: relative; top: 0px; height: 10x; min-height: 16px;" class="h1">   
 <!-- <div class="btn_save fn_btn" data-saveType="coordinate" data-itemImageId="" data-saveId="9251461" data-elementId="" data-screenId="" data-objectId=""> -->
   <div>
-  	<div id="opDisplay">200</div> 
   	<div id="opDisplay2">2000</div>
   		<div class="ghj">
 			<h3 class="clearfix">
-				<a><span class="label label-success" onclick='document.getElementById("opDisplay").innerHTML = "201"' id = "addBtn">Add</span></a>
-				<a><span class="label label-danger" onclick='document.getElementById("opDisplay2").innerHTML = "2001"' id = "loveBtn">Love</span></a>
+				<a><button class="label label-success" onclick= 'myFunction();' id = "addBtn" title="Add item to your closet!">Add</button></a>
+				<a><button class="label label-danger" onclick='document.getElementById("opDisplay2").innerHTML = "2001"' id = "loveBtn">&#x2764;</button></a>
+
 			</h3>
 		</div>
   </div>
@@ -152,16 +169,11 @@
   </div>
   </div>
   <div class="container">
-<!--  <div class="discription">
-	<h3 id="discription_text">Photo discription&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-	<p>This is my daily casual look! This collocation is not only suitable for dating night but also for attending a party.</p>
-	</div>-->
 	 <div class="UserComment">
-	<h3 id="otherUser_text">Users' Comment&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-	<p>1.Awesome! Really love this!!!</p>
-	<p>2.I will definitely buy these items!</p>
+	<h3 id="otherUser_text">Comments&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+	<h4>1.Awesome! Really love this!!!</h4>
+	<h4>2.I will definitely buy these items!</h4>
 	</div>
-	<h3 class="text-left" id ="Comment_text">Comment &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
 	<form method="post">
 	<div id="comment">
 		<input type="text" class="text" value="Write Comment" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Write Comment';}">
@@ -174,27 +186,7 @@
     <div class="container">
     <!--		<h3>Updated 9:30PM</h3> -->
 	  <div class="col-md-3 fashio-left">
-<!--				<img src="images/25.jpg" alt=" " class="img-responsive"> -->
-		<h4> </h4>
 			  <div class="clearfix">
-					<div class="ghj">
-					</div>
-						<!-- /.profile --></div>
-			</div>  
-			<div class="col-md-3 fashio-left">
-				<h4> </h4>
-			  <div class="clearfix">
-							  <div class="ghj">
-							</div>
-						<!-- /.profile --></div>
-			</div>
-			<div class="col-md-3 fashio-left">
-				<h4> </h4>
-			  <div class="clearfix">
-							<div class="ghj">
-							</div>
-						<!-- /.profile --></div>
-			</div>  
 	  <div class="col-md-3 fashio-left">
 				<h4> </h4>
 			  <div class="clearfix">

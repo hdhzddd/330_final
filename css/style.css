@@ -1571,14 +1571,15 @@ h3.ghj {
         background-color: #EF536B;
         position:absolute;
         font-size: 24px;
-        left: 200px;
+     /*   left: 200px;*/
+     left:200px;
         top: -30px;
       }
 #addBtn{
         background-color: #EF536B;
         position:absolute;
         font-size: 24px;
-        left: -15px;
+    left:-15px;
         top: -30px;
       }
 #comment input[type="text"]{
@@ -1596,8 +1597,9 @@ h3.ghj {
   padding: 10px;
 }
 #submit{
-  margin:0px 1050px;
+  margin:0px;
   font-size: 24;
+  float: right;
 }
 .discription{
   width: 75%;
@@ -1616,14 +1618,16 @@ h3.ghj {
   padding: 10px;
 
 }
+
 .UserComment{
-    width: 75%;
+  width: 75%;
   margin:0px 280px 20px 280px;
   font-size: 24; 
   padding: 10px;
 }
+
 #otherUser_text{
-    margin:0px 280px 20px 0px;
+  margin:0px 280px 20px 0px;
   font-size: 24;
   background: black;
   width:280px;
@@ -1646,6 +1650,10 @@ h3.ghj {
   color: white;
   font-family: sans-serif;
   font-size: 24;
-  margin:0px 0px 10px 0px;
+ margin:0px 0px 10px 0px;
 
+}
+.title{
+  margin-top:50px;
+  margin-bottom: 15px;  
 }

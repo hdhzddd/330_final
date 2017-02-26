@@ -52,14 +52,14 @@
 <div class="container">
 	<div class="col-md-3 header-left">
 		<div class="logo">
-			<h1><a href="index.html">LOGO</a></h1>
+			<h1><a href="indexL.html">LOGO</a></h1>
 		</div>
 		
 		<div class="head-nav">
 			<span class="menu"><img src="images/menu.png" alt=""><p class="me"></p></span>
 				<div class="clearfix"> </div>
 					<ul class="cl-effect-16">
-						<li class="active"><a href="index.html" data-hover="HOME">HOME</a></li>
+						<li class="active"><a href="indexL.html" data-hover="HOME">HOME</a></li>
 						<li><a href="profile.html" data-hover="PROFILE">PROFILE</a></li>
 						<li><a href="blog.html" data-hover="BLOG">BLOG</a></li>
 						
@@ -78,18 +78,42 @@
 		</div>
 		
 		<div class="b-search">
-				<form action="search.html">
-					<input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}">
-					<input type="submit" value="">
-				</form>
-	  </div>
+        <form action="search.html">
+          <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+          <input type="submit" value="">
+        </form>
+      </div>
+      <section id="tag">
+				<h5 class="title" style="margin-top: 5px">Tags:</h5>
+				<ol>
 			
+					<li>
+						<p class="txt"><a href="search.html">#T-Shirts</a></p>
+					</li>
+			
+					<li>
+						<p class="txt"><a href="search.html">#Skirts</a></p>
+					</li>
+			
+					<li>
+						
+						<p class="txt"><a href="search.html">#Casual</a></p>
+					</li>
+			
+					<li>
+					
+						<p class="txt"><a href="search.html">#Suits</a></p>
+					</li>
+			
+					
+				</ol>
+</section>
 	</div>
 	<div class="col-md-9 header-right">
 			<div class="log-sig">
 			  <ul>
-			    <li><a href="profile.html">MY PROFILE</a></li>
-			    <li><a href="login.html">LOG OUT</a></li>
+			    <li><a href="profile.html">My Profile</a></li>
+			    <li><a href="login.html">Log Out</a></li>
 		      </ul>
 			  <li></li>
 					<div class="clearfix"> </div>
@@ -100,25 +124,30 @@
 				<div class="slider">
 				
 				  <div class="co-ntact col-lg-11 col-md-12"  id="contact">
-							  <div class="container">
+							  <div class="container" style="float: left; width: 450px" >
 							    <h3 class="text-left">Add Single item &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
-							    <form method="post" action="contact-post.html">
-							      <div class="to">
-							        <input type="text" class="text" value="NAME" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
-							        <input type="text" class="text" value="Brand" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
-							        <input type="text" class="text" value="Size" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
-							        <input type="text" class="text" value="Color" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
-							        <input type="text" class="text" value="Category" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
-							        <input type="text" class="text" value="Notes" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}">
-							        <input type="text" class="text" value="Description" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Subject';}">
+							    <form method="post" action="mycloset.html" >
+							      <div class="to" style="width: 350px">
+							        <input type="text"  class="text" value="Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
+							        <input type="text" class="text" value="Brand" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Brand';}">
+							        <input type="text" class="text" value="Size" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Size';}">
+							        <input type="text" class="text" value="Color" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Color';}">
+							        <input type="text" class="text" value="Category" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Category';}">
+							        <input type="text" class="text" value="Description" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Description';}">
 						          </div>
 							      <div class="text"> </div>
-							      <div class="col-md-8 h3"> Upload Images</div>
+							      
 						        </form>
 			        </div>
-				  <span class="to" style="margin-bottom:15px"><img src="images/1.PNG" alt=" " class="img-responsive"></span>				  </div>
+			       
+			        		 <div class="to" style="margin-bottom:15px; margin-top: 130px;float: left; width: 300px"><div class="col-md-8 h3"> Upload Images</div><a href="./singleitem.html" ><img style="height: 300px" src="images/1.PNG" alt=" " class="img-responsive"></a></div>
+	
+				 				  </div>
+				 
+				 		 
+				 		 
 					<div class="form-submit">
-					  <a class="acount-btn" href="indexL.html">SUBMIT</a>
+					  <a style="margin-left: 600px" class="acount-btn" href="mycloset.html">SUBMIT</a>
 					  <br>
 				  </div>
 		      </div>
